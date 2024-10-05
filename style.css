@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Mengubah gaya gambar header */
+.header-img {
+    width: 100%; /* Pastikan gambar memenuhi lebar */
+    height: 300px; /* Tinggi gambar diatur lebih besar */
+    object-fit: cover; /* Memastikan gambar terpotong secara proporsional */
+    object-position: center; /* Posisikan gambar di tengah */
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* Tambahkan latar belakang gelap transparan untuk kontras */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+nav {
+    background-color: #34495e;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#main-event, #schedule, #registration, #contact {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #34495e;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3498db;
+}
