@@ -58,10 +58,14 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 5px 10px; /* Tambahkan padding untuk area klik lebih luas */
+    transition: background-color 0.3s, color 0.3s; /* Transisi untuk efek hover */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #2980b9; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+    border-radius: 5px; /* Tambahkan border radius untuk efek melingkar */
 }
 
 #main-event, #schedule, #registration, #contact {
@@ -100,3 +104,81 @@ button {
 button:hover {
     background-color: #3498db;
 }
+
+/* === Responsive Media Queries === */
+@media (max-width: 1024px) {
+    nav ul {
+        display: block; /* Ubah ke tampilan vertikal */
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Atur margin untuk menu */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-img {
+        height: 250px; /* Sesuaikan tinggi gambar untuk tablet */
+    }
+
+    #main-event, #schedule, #registration, #contact {
+        width: 90%; /* Perbesar lebar kontainer pada tablet */
+    }
+
+    .header-content {
+        padding: 15px; /* Perkecil padding konten header */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-img {
+        height: 200px; /* Sesuaikan tinggi gambar untuk mobile */
+    }
+
+    nav ul {
+        display: block; /* Ubah tampilan menu menjadi blok */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Perkecil margin pada menu */
+    }
+
+    .header-content h1 {
+        font-size: 20px; /* Sesuaikan ukuran font judul */
+    }
+
+    .header-content h2 {
+        font-size: 16px; /* Sesuaikan ukuran font subjudul */
+    }
+
+    #main-event, #schedule, #registration, #contact {
+        width: 95%; /* Perbesar lebar kontainer pada layar kecil */
+    }
+
+    button {
+        width: 100%; /* Buat tombol memenuhi lebar */
+        margin-top: 10px; /* Tambahkan jarak di atas tombol */
+    }
+}
+
+@media (max-width: 320px) {
+    .header-img {
+        height: 150px; /* Sesuaikan tinggi gambar untuk layar kecil */
+    }
+
+    .header-content h1 {
+        font-size: 18px; /* Sesuaikan ukuran font judul */
+    }
+
+    .header-content h2 {
+        font-size: 14px; /* Sesuaikan ukuran font subjudul */
+    }
+}
+
+@media (max-width: 280px) {
+    .header-img {
+        height: 120px; /* Sesuaikan tinggi gambar untuk layar kecil */
+    }
+
+    .header-content h1 {

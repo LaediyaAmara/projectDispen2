@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Panitia</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #34495e; /* Tambahkan latar belakang untuk header */
+            padding: 20px;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #34495e;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #34495e;
+            color: white;
+        }
+
+        /* === Styles for Asset Section === */
+        #assets {
+            display: flex; /* Menggunakan flexbox */
+            justify-content: space-around; /* Memberikan jarak di antara aset */
+            flex-wrap: wrap; /* Membuat elemen membungkus ke baris baru saat tidak ada ruang */
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%; /* Lebar kontainer */
+        }
+
+        .asset {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Untuk memastikan gambar tidak meluap */
+            margin: 10px; /* Jarak antara setiap asset */
+            text-align: center; /* Pusatkan teks */
+            flex: 1; /* Membuat asset memiliki ukuran yang sama */
+            max-width: 300px; /* Maksimum lebar untuk setiap asset */
+            transition: transform 0.2s; /* Efek transisi saat hover */
+        }
+
+        .asset:hover {
+            transform: scale(1.05); /* Perbesar saat hover */
+        }
+
+        .asset img {
+            width: 100%; /* Gambar memenuhi lebar kontainer */
+            height: 200px; /* Tinggi konsisten untuk semua gambar */
+            object-fit: cover; /* Memastikan gambar terpotong secara proporsional */
+        }
+
+        /* === Centering Paragraphs === */
+        section {
+            text-align: center; /* Pusatkan teks dalam section */
+        }
+
+        /* === Responsive Media Queries === */
+        @media (max-width: 768px) {
+            #assets {
+                flex-direction: column; /* Ubah menjadi kolom pada layar kecil */
+                align-items: center; /* Pusatkan item */
+            }
+
+            #assets .asset {
+                max-width: 90%; /* Lebar maksimum pada layar kecil */
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                display: block; /* Ubah tampilan menu menjadi blok */
+            }
+
+            nav ul li {
+                margin: 5px 0; /* Perkecil margin pada menu */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data Panitia</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="datapanitia.html">Data Panitia</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Informasi Panitia</h2>
+        <p>Daftar siswa/i yang mengikuti kepanitiaan</p>
+    </section>
+
+    <!-- Section for Assets -->
+    <section id="assets">
+        <div class="asset">
+            <img src="asset/img/asset1.jpg" alt="Menjadi Panitia Lomba Kaligrafi">
+            <h3>AL Haidar</h3>
+            <p>Menjadi Panitia Lomba Kaligrafi</p>
+        </div>
+        <div class="asset">
+            <img src="asset/img/asset2.jpg" alt="Rifdah Fadhillah">
+            <h3>Rifdah Fadhillah</h3>
+            <p>Menjadi Panitia Bendahara OSIS</p>
+        </div>
+        <div class="asset">
+            <img src="asset/img/asset3.jpg" alt="Gyna Khairunnisa">
+            <h3>Gyna Khairunnisa</h3>
+            <p>Menjadi Panitia Seksi Acara</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2024 - Maulid Nabi</p>
+    </footer>
+</body>
+</html>
